@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        height: 50px;
+        width: auto;
+        margin-right: 1rem;
+      }
+
+      .site-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-image {
+        width: 100%;
+        height: 425px; /* Adjusted to maintain 905x1280 aspect ratio for 300px width */
+        object-fit: cover;
+      }
+
+      .menu-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+        margin: 1rem 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      .card-title {
+        text-align: center;
+        margin: 1rem 0;
+      }
+
+      .card-text {
+        text-align: center;
+        margin: 1rem 0;
+      }
+
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 1rem;
+      }
+
+      .price {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #2ecc71;
+        margin-top: auto;
+        padding-bottom: 1rem;
+      }
+
+      .about-us {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+        text-align: center;
+      }
+
+      .about-title {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1rem;
+        font-family: "Arial", sans-serif;
+      }
+
+      .about-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #666;
+      }
+
+      .social-icon {
+        font-size: 1.5rem;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .social-icon:hover {
+        color: #2ecc71;
+      }
+
+      .wa-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        background-color: #25d366;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 0.5rem 1rem 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .wa-button:hover {
+        background-color: #128c7e;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="mbonlogo.png" alt="MBON Logo" class="logo" />
+      <a href="#" class="site-title">Flavour Fusion</a>
+    </nav>
+    <h1 class="menu-title">Menu Kami</h1>
+    <div class="container">
+      <div class="card-container">
+        <div class="card">
+          <a
+            href="https://api.whatsapp.com/send/?phone=628159993633&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAY2xjawIY46lleHRuA2FlbQIxMAABpkXjHInB9hvySic0JLj089oJy8QUU-w8Ixyb3KgX5MQ2odb3sTtukTYqiQ_aem_69h4NTTjOZRrLu0AzJqKjA"
+            target="_blank"
+          >
+            <img src="escampur.jpeg" alt="Card 1" class="card-image" />
+          </a>
+          <div class="card-content">
+            <h3 class="card-title">Es Campur</h3>
+            <p class="card-text">
+              Es campur merupakan hidangan penutup dingin dan manis khas
+              Indonesia yang terbuat dari koktail buah, kelapa, mutiara tapioka,
+              cincau, dsb. yang disajikan dengan es serut, sirup, dan susu
+              kental manis.
+            </p>
+
+            <p class="price">Rp 5.000</p>
+            <a
+              href="https://api.whatsapp.com/send/?phone=628159993633&text=Saya%20ingin%20memesan%20Es%20Campur%20(Rp%205.000)"
+              class="wa-button"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Pesan Sekarang
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <a
+            href="https://api.whatsapp.com/send/?phone=628159993633&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAY2xjawIY46lleHRuA2FlbQIxMAABpkXjHInB9hvySic0JLj089oJy8QUU-w8Ixyb3KgX5MQ2odb3sTtukTYqiQ_aem_69h4NTTjOZRrLu0AzJqKjA"
+            target="_blank"
+          >
+            <img src="nasduk.jpeg" alt="Card 2" class="card-image" />
+          </a>
+          <div class="card-content">
+            <h3 class="card-title">Nasi Uduk</h3>
+            <p class="card-text">
+              Nasi uduk adalah hidangan yang dibuat dari nasi putih yang diaron
+              dan dikukus dengan santan, serta dibumbui dengan pala, kayu manis,
+              jahe, daun serai, dan merica, yang populer di hidangan Betawi
+            </p>
+            <p class="price">Rp 5.000</p>
+            <a
+              href="https://api.whatsapp.com/send/?phone=628159993633&text=Saya%20ingin%20memesan%20Nasi%20Uduk%20(Rp%205.000)"
+              class="wa-button"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Pesan Sekarang
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <a
+            href="https://api.whatsapp.com/send/?phone=628159993633&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=PAY2xjawIY46lleHRuA2FlbQIxMAABpkXjHInB9hvySic0JLj089oJy8QUU-w8Ixyb3KgX5MQ2odb3sTtukTYqiQ_aem_69h4NTTjOZRrLu0AzJqKjA"
+            target="_blank"
+          >
+            <img src="somay.jpeg" alt="Card 3" class="card-image" />
+          </a>
+          <div class="card-content">
+            <h3 class="card-title">Siomay</h3>
+            <p class="card-text">
+              siomai atau biasa disebut sebagai siomay identik dan dikenal
+              sebagai makanan khas Jawa Barat, khususnya di Kota Bandung.
+            </p>
+            <p class="price">Rp 8.000</p>
+            <a
+              href="https://api.whatsapp.com/send/?phone=628159993633&text=Saya%20ingin%20memesan%20Siomay%20(Rp%208.000)"
+              class="wa-button"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Pesan Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="about-us">
+        <h2 class="about-title">Tentang Kami</h2>
+        <p class="about-text">
+          Selamat datang di Flavour Fusion, di mana masakan tradisional
+          Indonesia berpadu dengan seni kuliner modern. Semangat kami adalah
+          menciptakan hidangan otentik yang merayakan kekayaan cita rasa dan
+          warisan budaya Indonesia. Setiap hidangan dibuat dengan hati-hati
+          menggunakan bahan-bahan segar yang berasal dari sumber lokal untuk
+          memastikan pengalaman bersantap dengan kualitas terbaik.
+        </p>
+      </div>
+    </div>
+    <footer
+      style="
+        background-color: #f5e6cc;
+        color: #333;
+        padding: 2rem 0;
+        margin-top: 2rem;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 2rem;
+        "
+      >
+        <div>
+          <h3 style="margin-bottom: 1rem; color: #333">Kontak Kami</h3>
+          <p>Phone: +62 815-999-3633</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom: 1rem; color: #333">Ikuti Kami</h3>
+          <div style="display: flex; gap: 1rem">
+            <a
+              href="https://www.instagram.com/flavfusionz?igsh=MTc5dDNmbDljb2YwZA=="
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <!-- <a
+            href="#"
+            style="color: #333; text-decoration: none; font-weight: bold"
+            >Facebook</a
+          >
+          <a
+            href="#"
+            style="color: #333; text-decoration: none; font-weight: bold"
+            >Twitter</a
+          > -->
+          </div>
+        </div>
+        <div>
+          <p style="color: #333">
+            &copy; 2024 Flavour Fusion. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
